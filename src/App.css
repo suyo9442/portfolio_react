@@ -1,21 +1,121 @@
-.black-nav {
-  background : black;
-  width : 100%;
-  display : flex;
-  color : white;
-  padding : 20px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* https://fonts.google.com/specimen/Roboto+Condensed?preview.text=DEVELOPER%20FANCY&preview.text_type=custom */
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-div {
-  box-sizing : border-box
+
+body {
+  background: #000;
+  font-size: 1.6rem;
 }
-.list {
-  text-align : left;
-  padding-left : 20px;
-  border-bottom : 1px solid grey;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
 }
-.modal{
-  margin-top : 20px;
-  padding : 20px;
-  background : #eee;
-  text-align : left;
+
+/* title */
+#title {
+  padding-bottom: 5rem;
+}
+#title h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffcc80;
+  font-size: 9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* main */
+#main .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#main #profile {
+  width: 80%;
+  height: 50rem;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+#profile {
+  display: flex;
+}
+#profile .profile_pic {
+  margin-right: 2rem;
+}
+#profile .profile_pic span {
+  display: block;
+  width: 36rem;
+  height: 100%;
+  background: url('../public/238149.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#profile .profile_desc {
+  display: flex;
+  flex-direction: column;
+}
+#profile .profile_desc h3 {
+  font-size: 7rem;
+  font-style: italic;
+  font-weight: 700;
+  white-space: nowrap;
+}
+#profile .profile_desc ul {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+}
+#profile .profile_desc ul li {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+#profile .profile_desc p {
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: 1.6rem;
+}
+#profile .profile_desc table {
+  width: 100%;
+  border: 2px solid #000;
+  table-layout: fixed;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#profile .profile_desc table td {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 2px solid #000;
+  text-transform: capitalize;
+}
+#profile .profile_desc table td dl img {
+  width: 2.4rem;
+}
+#profile .profile_desc table td dl {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  text-transform: initial;
+  margin-top: 1rem;
+}
+#profile .profile_desc table td dl dd {
+  line-height: 2.5rem;
+  margin-left: 0.6rem;
+}
+#profile .profile_desc table td.qr {
+  position: relative;
+}
+#profile .profile_desc table td.qr img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
